@@ -12,6 +12,7 @@ package ca.sheridancollege.week1.softwarefundamentals;
  * @Modifiedby kaif
  * push operation
  *checking the changes in github: yes it changed (Hi from github)
+ Checking th fetch + Merge 
  * @author dancye May 7, 2018
  */
 public class Student 
