@@ -30,24 +30,21 @@ public class CardTrick {
             magicHand[i] = new Card(value, suit);
         }
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Pick a card (value and suit):");
-        int userValue = scanner.nextInt();
-        String userSuit = scanner.next();
+        Card luckyCard = new Card(7, "Hearts");
 
         boolean found = false;
-        for (Card card : magicHand) {
-            if (card.getValue() == userValue && card.getSuit().equalsIgnoreCase(userSuit)) {
-                found = true;
-                break;
-            }
-        }
+for (Card card : magicHand) {
+    if (card.getValue() == luckyCard.getValue() && card.getSuit().equalsIgnoreCase(luckyCard.getSuit())) {
+        found = true;
+        break;
+    }
+}
 
-        if (found) {
-            System.out.println("Your card is in the magic hand!");
-        } else {
-            System.out.println("Your card is not in the magic hand.");
-        }
+if (found) {
+    System.out.println("Your lucky card is in the magic hand! You win!");
+} else {
+    System.out.println("Your lucky card is not in the magic hand. You lose.");
+}
     }
 }
 
